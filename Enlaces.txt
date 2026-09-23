@@ -1,0 +1,2 @@
+Enlace al repo: https://github.com/Lobillo-24/ejercicios-js-ud2
+Enlace al pages: https://lobillo-24.github.io/ejercicios-js-ud2/
