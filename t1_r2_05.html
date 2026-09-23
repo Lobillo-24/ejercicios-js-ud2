@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t1_r2_05</title>
+</head>
+<body>
+
+    <button onclick="adivinarNumero()">jugar</button>
+
+<script>    
+function adivinarNumero() {
+    let secreto = parseInt(prompt("Jugador 1: Introduce el número secreto a adivinar:"));
+    let intento = parseInt(prompt("Jugador 2: Introduce un número para adivinar:"));
+
+    while (intento !== secreto) {
+        if (intento > secreto) {
+            intento = parseInt(prompt("El número secreto es menor. Prueba otra vez:"));
+        } else {
+            intento = parseInt(prompt("El número secreto es mayor. Prueba otra vez:"));
+        }
+    }
+
+    alert("¡Enhorabuena! Has acertado el número.");
+}
+</script>
+
+</body>
+</html>

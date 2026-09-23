@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t1_r2_06</title>
+</head>
+<body>
+
+    <button onclick="tablasMultiplicar()">crear</button>
+
+<script>    
+function tablasMultiplicar() {
+    for (let i = 1; i <= 10; i++) {
+        document.write(`<h3>Tabla del ${i}:</h3>`);
+        for (let j = 1; j <= 10; j++) {
+            document.write(`${j} x ${i} = ${j * i}<br>`);
+        }
+    }
+}
+</script>
+
+</body>
+</html>

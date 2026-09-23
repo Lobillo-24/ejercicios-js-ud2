@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t1_r2_08</title>
+</head>
+<body>
+
+    <button onclick="crearTablero()">crear</button>
+
+<script>    
+function crearTablero() {
+    let medida = parseInt(prompt("Introduce el ancho y alto de las celdas (en píxeles):"));
+    let anchoTotal = 8 * medida;
+
+    document.write(`<table border="0" cellspacing="2" bgcolor="black" width="${anchoTotal}">`);
+
+    for (let f = 1; f <= 8; f++) {
+        document.write(`<tr height="${medida}">`);
+        
+        for (let c = 1; c <= 8; c++) {
+            let color;
+            if ((f + c) % 2 === 0) {
+                color = "black";
+            } else {
+                color = "white";
+            }
+            document.write(`<td width="${medida}" bgcolor="${color}">&nbsp;</td>`);
+        }
+        
+        document.write(`</tr>`);
+    }
+
+    document.write(`</table>`);
+}
+</script>
+
+</body>
+</html>
